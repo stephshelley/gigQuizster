@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Colfax-Medium.ttf">
+            <string>Colfax-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrueFalseButtons" customModule="GigQuizSter" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomIcon" destination="D9O-F6-9H2" id="fH3-f9-DJp"/>
+                <outlet property="falseButton" destination="Xj4-S0-4TK" id="YoN-VR-SeG"/>
+                <outlet property="topIcon" destination="wpM-Vl-qee" id="nkn-CA-feI"/>
+                <outlet property="trueButton" destination="WNl-lX-UXh" id="wLc-rM-psa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="257" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKe-Nn-GjH">
+                    <rect key="frame" x="0.0" y="75" width="265" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="pl3-gg-KjX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNl-lX-UXh" customClass="Button" customModule="GigQuizSter" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="257" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="URx-N7-psb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="17"/>
+                    <state key="normal" title="TRUE">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-icon" translatesAutoresizingMaskIntoConstraints="NO" id="wpM-Vl-qee" customClass="RightWrongIcon" customModule="GigQuizSter" customModuleProvider="target">
+                    <rect key="frame" x="65" y="27" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="sLs-2f-aWy"/>
+                        <constraint firstAttribute="width" constant="22" id="w1J-CW-4NV"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj4-S0-4TK" customClass="Button" customModule="GigQuizSter" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="75" width="257" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="IKi-VG-76Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="17"/>
+                    <state key="normal" title="FALSE">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wrong-icon" translatesAutoresizingMaskIntoConstraints="NO" id="D9O-F6-9H2" customClass="RightWrongIcon" customModule="GigQuizSter" customModuleProvider="target">
+                    <rect key="frame" x="65" y="102" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="gg0-Ph-gxZ"/>
+                        <constraint firstAttribute="width" constant="22" id="jY0-Dp-9m3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.25098039215686274" green="0.58039215686274503" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FKe-Nn-GjH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="75" id="1Da-xZ-x1a"/>
+                <constraint firstAttribute="trailing" secondItem="Xj4-S0-4TK" secondAttribute="trailing" id="CAc-Ch-Oak"/>
+                <constraint firstItem="wpM-Vl-qee" firstAttribute="centerY" secondItem="WNl-lX-UXh" secondAttribute="centerY" id="EDv-KR-IFA"/>
+                <constraint firstItem="WNl-lX-UXh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IjC-kJ-e69"/>
+                <constraint firstItem="D9O-F6-9H2" firstAttribute="centerY" secondItem="Xj4-S0-4TK" secondAttribute="centerY" id="NJH-Tg-zfW"/>
+                <constraint firstAttribute="trailing" secondItem="FKe-Nn-GjH" secondAttribute="trailingMargin" id="NJq-Qr-SPN"/>
+                <constraint firstItem="D9O-F6-9H2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="65" id="PSx-9s-X9L"/>
+                <constraint firstAttribute="trailing" secondItem="WNl-lX-UXh" secondAttribute="trailing" id="Sjt-Qu-cs1"/>
+                <constraint firstItem="Xj4-S0-4TK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a0L-zG-oxA"/>
+                <constraint firstItem="FKe-Nn-GjH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iiS-Et-tOx"/>
+                <constraint firstItem="FKe-Nn-GjH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jyp-pe-C3s"/>
+                <constraint firstItem="WNl-lX-UXh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kzI-m5-5WZ"/>
+                <constraint firstItem="wpM-Vl-qee" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="65" id="p7V-lg-1nc"/>
+                <constraint firstAttribute="bottom" secondItem="Xj4-S0-4TK" secondAttribute="bottom" id="sal-68-7pQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="36.5" y="-141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="right-icon" width="22" height="22"/>
+        <image name="wrong-icon" width="22" height="22"/>
+    </resources>
+</document>
